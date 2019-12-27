@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>电商大数据分析平台</title>
+    <!--设置是否为缩放模式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" type="text/css" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--echarts JS-->
+    <script src="js/echarts.min.js"></script>
+    <!-- 轮播swiper文件 -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+    <!--界面样式-->
+    <script src="js/visual.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/chartMap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/visual.css">
+
+</head>
+<body class="ksh">
+<div id="load">
+    <div class="load_img"><!-- 加载动画 -->
+        <img class="jzxz1" src="images/jzxz1.png">
+        <img class="jzxz2" src="images/jzxz2.png">
+    </div>
+</div>
+<div class="head_top">
+    <!--<img class="img-responsive" src="images/jcdsj_logo.gif">-->
+
+</div>
+<div class="visual">
+    <div class="visual_left">
+        <div class="visual_box">
+            <div class="visual_title">
+                <span>活跃人群信息</span>
+                <img src="images/ksh33.png">
+            </div>
+            <div class="visual_chart" id="main1">
+
+            </div>
+        </div>
+        <div class="visual_box">
+            <div class="visual_title">
+                <span>用户人数统计</span>
+                <img src="images/ksh33.png">
+            </div>
+            <div class="visual_chart" id="main2">
+
+            </div>
+        </div>
+        <div class="visual_box">
+            <div class="visual_title">
+                <span>Top3热销商品</span>
+                <img src="images/ksh33.png">
+            </div>
+            <div class="visual_chart sfzcll">
+                <a>商品名称</a>
+                <a>点击量</a>
+                <a>下单量</a>
+                <div class="sfzcll_pos_box">
+                    <div class="sfzcll_box">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <label><img src="images/ksh35.png">森马羽绒服男</label>
+                        <div class="sfzcll_smallBk">
+                            <div class="ygl">
+                                <span>4347.2万</span>人
+                            </div>
+                        </div>
+                        <div class="sfzcll_smallBk">
+                            <div class="ygh">
+                                <span>4347.2万</span>人
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="sfzcll_box">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <label><img src="images/ksh35.png">森马休闲裤冬</label>
+                        <div class="sfzcll_smallBk">
+                            <div class="ygl">
+                                <span>4347.2万</span>人
+                            </div>
+                        </div>
+                        <div class="sfzcll_smallBk">
+                            <div class="ygh">
+                                <span>4347.2万</span>人
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="sfzcll_box">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <img class="sfzcll_bkJk" src="images/ksh34.png">
+                        <label><img src="images/ksh35.png">森马毛衣短款</label>
+                        <div class="sfzcll_smallBk">
+                            <div class="ygl">
+                                <span>4347.2万</span>人
+                            </div>
+                        </div>
+                        <div class="sfzcll_smallBk">
+                            <div class="ygh">
+                                <span>4347.2万</span>人
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="visual_con">
+        <div class="visual_conTop">
+            <div class="visual_conTop_box visual_conTop1">
+                <div>
+                    <h3>用户总数(起)</h3>
+                    <p>9527</p>
+
+                </div>
+            </div>
+            <div class="visual_conTop_box visual_conTop2">
+                <div>
+                    <h3>本日注册用户总数</h3>
+                    <p>888</p>
+
+                </div>
+            </div>
+            <div class="visual_conTop_box visual_conTop1">
+                <div>
+                    <h3>用户注册增长率</h3>
+                    <p>9%</p>
+
+                </div>
+            </div>
+            <div class="visual_conTop_box visual_conTop2">
+                <div>
+                    <h3>每日活跃用户数</h3>
+                    <p>7421</p>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="visual_conBot">
+            <img class="visual_conBot_l" src="images/ksh42.png">
+            <img class="visual_conBot_2" src="images/ksh43.png">
+            <img class="visual_conBot_3" src="images/ksh44.png">
+            <img class="visual_conBot_4" src="images/ksh45.png">
+            <div class="visual_chart_text">
+                <h1>城市热销商品</h1>
+            </div>
+            <div class="visual_chart" id="main9"></div>
+            <div class="visual_conBot_bot">
+                <div class="visualSssf_left">
+                    <h3>今日实时消费</h3>
+                    <a style="display:block">全国数据</a>
+                    <a>北京</a>
+                    <a>江苏</a>
+                    <a>上海</a>
+                    <a>四川</a>
+                    <a>广东</a>
+                    <a>陕西</a>
+                    <a class="active">山东</a>
+                    <a>广西</a>
+                    <a>湖北</a>
+                </div>
+                <div class="visualSssf_right">
+                    <div class="visualSssf_right_box" id="main5"></div>
+                    <div class="visualSssf_right_box" id="main6"></div>
+                    <div class="visualSssf_right_box" id="main7"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="visual_right">
+        <div class="visual_box">
+            <div class="visual_title">
+                <span>本网页赞助商</span>
+                <img src="images/ksh33.png">
+            </div>
+            <div class="swiper-container visual_swiper1 visual_chart">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="main3"></div>
+                    <div class="swiper-slide" id="main31"></div>
+                </div>
+            </div>
+        </div>
+        <div class="visual_box visualSfzsfl">
+            <div class="visual_title">
+                <span>地区热销量</span>
+                <img src="images/ksh33.png">
+            </div>
+            <div class="visual_chart" id="main8">
+
+            </div>
+
+        </div>
+        <div class="visual_box">
+            <div class="visual_title">
+                <span>商品热销地区</span>
+                <img src="images/ksh33.png">
+            </div>
+            <div class="swiper-container visual_swiper2 visual_chart">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="main4"></div>
+                    <div class="swiper-slide" id="main41"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+		$(function(){
+			var a=$('.visualSssf_left a')
+			for(var i=0;i<a.length;i++){
+				a[i].index=i;
+				a[i].onclick=function(){
+					for(var i=0;i<a.length;i++){
+						a[i].className=''
+						}
+					this.className='active'
+				}
+			}
+
+			var sfzcllH=$('.sfzcll_box').height()
+			var sfzcllHtwo=sfzcllH-2
+			$('.sfzcll_box').css('line-height',sfzcllH+'px')
+			$('.sfzcll_smallBk>div').css('line-height',sfzcllHtwo+'px')
+
+			//删除加载动画
+			$('#load').fadeOut(1000)
+    		setTimeout(function(){    
+    			$('#load').remove()
+    		}
+    		,1100);
+		})
+
+	//Chart1 饼图
+	var myChart1 = echarts.init(document.getElementById('main1'));
+	$.ajax({
+		url:'/pieChart',
+		type:'post',
+		async:true,
+		dataType:'json',
+		success:function(result){
+			myChart1.setOption({
+				tooltip: {
+        			trigger: 'item',
+        			formatter:  "{a} <br/>{b} : {c} ({d}%)"
+    			},
+    			legend: {
+        			top: 0,
+        			right:10,
+        			itemGap: 16,
+        			itemWidth: 10,
+        			itemHeight: 10,
+        			data: result,
+        			textStyle: {
+            			color: '#fff',
+            			fontStyle: 'normal',
+            			fontFamily: '微软雅黑',
+            			fontSize: 12,
+        			}
+    			},
+    			grid: {
+        			x: 0,
+        			y: 30,
+        			x2: 0,
+        			y2: 25,
+    			},
+                calculable : true,
+    			series: [ {
+         			name : '活跃人群',
+         			type : 'pie',
+         			radius : '55%', // 半径大小
+         			center : [ '50%', '60%' ], // 圆心相对位置，水平50%，垂直60%
+         			data : result
+    			} ]
+			});
+		}
+	});
+	//Chart2 走势图
+	var myChart2 = echarts.init(document.getElementById('main2'));
+	$.ajax({
+	    url:'/lineChart',
+	    type:'post',
+		async:true,
+		dataType:'json',
+		success:function(result){
+		    myChart2.setOption({
+                tooltip: {//鼠标指上时的标线
+                    trigger: 'axis',
+                    axisPointer: {
+                        lineStyle: {
+                            color: '#fff'
+                        }
+                    }
+                },
+                legend: {
+                    icon: 'rect',
+                    itemWidth: 14,
+                    itemHeight: 5,
+                    itemGap: 13,
+                    data: ['活跃用户', '新增用户', '在线用户'],
+                    right: '10px',
+                    top: '0px',
+                    textStyle: {
+                        fontSize: 12,
+                        color: '#fff'
+                    }
+                },
+                grid: {
+                    x: 30,
+                    y: 25,
+                    x2: 8,
+                    y2: 25,
+                },
+                xAxis: [{
+                    type: 'category',
+                    boundaryGap: false,
+                    axisLine: {
+                        lineStyle: {
+                            color: '#57617B'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color:'#fff',
+                        },
+                    },
+                    data: ['0点', '2点', '4点', '6点', '8点', '10点', '12点', '14点', '16点', '18点', '20点', '22点','24点']
+                }],
+                yAxis: [{
+                    type: 'value',
+                    axisTick: {
+                        show: false
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#57617B'
+                        }
+                    },
+                    axisLabel: {
+                        margin: 10,
+                        textStyle: {
+                            fontSize: 14
+                        },
+                        textStyle: {
+                            color:'#fff',
+                        },
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: '#57617B'
+                        }
+                    }
+                }],
+                series: [{
+                    name: '活跃用户',
+                    type: 'line',
+                    smooth: true,
+                    lineStyle: {
+                        normal: {
+                            width: 2
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgba(137, 189, 27, 0.3)'
+                            }, {
+                                offset: 0.8,
+                                color: 'rgba(137, 189, 27, 0)'
+                            }], false),
+                            shadowColor: 'rgba(0, 0, 0, 0.1)',
+                            shadowBlur: 10
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(137,189,27)'
+                        }
+                    },
+                    data: result[0]
+                }, {
+                    name: '总用户',
+                    type: 'line',
+                    smooth: true,
+                    lineStyle: {
+                        normal: {
+                            width: 2
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgba(0, 136, 212, 0.3)'
+                            }, {
+                                offset: 0.8,
+                                color: 'rgba(0, 136, 212, 0)'
+                            }], false),
+                            shadowColor: 'rgba(0, 0, 0, 0.1)',
+                            shadowBlur: 10
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(0,136,212)'
+                        }
+                    },
+                    data: result[1]
+                }, {
+                    name: '新增用户',
+                    type: 'line',
+                    smooth: true,
+                    lineStyle: {
+                        normal: {
+                            width: 2
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgba(219, 50, 51, 0.3)'
+                            }, {
+                                offset: 0.8,
+                                    color: 'rgba(219, 50, 51, 0)'
+                            }], false),
+                            shadowColor: 'rgba(0, 0, 0, 0.1)',
+                            shadowBlur: 10
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(219,50,51)'
+                        }
+                    },
+                    data: result[2]
+                }, ]
+		    });
+		}
+	});
+    //右一 雷达图 --- 不用
+	var myChart3 = echarts.init(document.getElementById('main3'));
+    myChart3.setOption(option3);
+    var myChart31 = echarts.init(document.getElementById('main31'));
+    myChart31.setOption(option31);
+    var mySwiper1 = new Swiper('.visual_swiper1', {
+		autoplay: true,//可选选项，自动滑动
+		speed:800,//可选选项，滑动速度
+		autoplay: {
+		    delay: 5000,//1秒切换一次
+		  },
+	})
+    //右三 特殊柱状图 --- 不用
+	var myChart4 = echarts.init(document.getElementById('main4'));
+    myChart4.setOption(option4);
+    var myChart41 = echarts.init(document.getElementById('main41'));
+    myChart41.setOption(option41);
+    var mySwiper2 = new Swiper('.visual_swiper2', {
+		autoplay: true,//可选选项，自动滑动
+		direction : 'vertical',//可选选项，滑动方向
+		speed:2000,//可选选项，滑动速度
+	})
+    //中一 数据展示
+	var myChart5 = echarts.init(document.getElementById('main5'));
+    myChart5.setOption(option5);
+    //
+    var myChart6 = echarts.init(document.getElementById('main6'));
+    myChart6.setOption(option6);
+    var myChart7 = echarts.init(document.getElementById('main7'));
+    myChart7.setOption(option7);
+    //右二 --- 不用
+	var myChart8 = echarts.init(document.getElementById('main8'));
+    myChart8.setOption(option8);
+    //Chart9 中间地图
+	var myChart9 = echarts.init(document.getElementById('main9'));
+	$.ajax({
+		url:'/mapChart',
+		type:'post',
+		async:true,
+		dataType:'json',
+		success:function(result){
+			myChart9.setOption({
+				title: {
+                    text: ' ',
+                    sublink: ' ',
+                    x:'center',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function (params) {
+                        return params.name + ' : ' + params.value[2];
+                    }
+                },
+                legend: {
+                    orient: 'vertical',
+                    y: 'bottom',
+                    x:'right',
+                    data:['pm2.5'],
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                geo: {
+                    map: 'china',
+                    label: {
+                        emphasis: {
+                            show: false
+                        }
+                    },
+                    roam: true,
+                    itemStyle: {
+                        normal: {
+                            areaColor: 'rgba(127,199,221,0.1)',
+                            borderColor: '#0177ff'
+                        },
+                        emphasis: {
+                            areaColor: '#071537'//鼠标指上市时的颜色
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: ' ',
+                        type: 'scatter',
+                        coordinateSystem: 'geo',
+                        data: convertData(result),
+                        symbolSize: 12,
+                        label: {
+                            normal: {
+                                show: false
+                            },
+                            emphasis: {
+                                show: false
+                            }
+                        },
+                        itemStyle: {
+                            emphasis: {
+                                borderColor: '#fff',
+                                borderWidth: 1
+                            }
+                        }
+                    }
+                ]
+            });
+        }
+	});
+
+
+</script>
+</body>
+</html>

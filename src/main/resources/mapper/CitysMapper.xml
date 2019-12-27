@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qst.project02main.mapper.CityMapper">
+
+    <select id="query" parameterType="String" resultType="Citys">
+        select province as name,items as value from top3;
+    </select>
+
+</mapper>
